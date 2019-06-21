@@ -174,7 +174,7 @@ box-shadow: 1px 7px 5px 0px rgba(196,196,196,1);
 }
 .project-description
 {
-  font-size: 20px;
+  font-size: 1em;
 }
 .project strong{
 font-family: 'Fjalla One';
@@ -201,8 +201,8 @@ footer a{
   color:white;
 }
 .exp{
-width: 480px;
-  margin: 10px;
+width: 47%;
+  margin: 2px;
     overflow: hidden;
       border-radius: 10px;
       flex-shrink: 0;
@@ -231,7 +231,8 @@ height: 150px;
 }
 .exp-description
 {
-  text-align: left;
+  font-size: 1em;
+  text-align: center;
   margin:20px;
 }
 .exp-link{
@@ -334,6 +335,13 @@ align-content: center;
   height: inherit;
   margin:0 auto;
 }
+.container-footer{
+  display: flex;
+  align-items: inherit;
+  justify-content: space-around;
+  height: inherit;
+  margin:0 auto;
+}
 .project-imageContainer img{
   max-width:100% ;
 
@@ -344,8 +352,47 @@ align-content: center;
 
 }
 @media screen and (max-width: 767px){
+  .container-footer
+  {
+    display: block;
+    text-align: center;
+    padding: 1em;
+  }
+.contacto{
+  width: auto;
+  padding-top: 1em;
+  padding-bottom: 4em;
+  text-align: center;
+  display: block;
+  padding-left: 1em;
+      padding-right: 1em;
+}
+.social{
+  padding: 1em;
+}
+.container{
+  padding: 1em;
+}
+.email{
+  margin-left: 0px;
+      padding: .5em;
+}
+.email button{
+  margin-bottom: 10px;
+}
+.exp{
+  width: auto;
+  flex-shrink: initial;
 
-
+}
+.exp img{
+  width: 100%;
+  object-position: 10% 30%;
+}
+.exp-details{
+margin:-2em .5em .5em 10px;
+padding: 1em;
+}
   .header{
     display: block;
 height: auto;
@@ -396,9 +443,10 @@ height: auto;
   margin: .4em 0;
 }
 .project-description{
-  font-size: .8em;
+  font-size: 1em;
   margin: .4em 0;
 }
+
 
 
 
@@ -409,5 +457,9 @@ height: auto;
   .project-details{
     width: auto;
     font-size: 12px
+  }
+  .contacto{
+    padding-bottom: 7em;
+  
   }
 }

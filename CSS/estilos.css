@@ -349,7 +349,28 @@ align-content: center;
 /* Media querys desktop first*/
 @media screen and (max-width: 1024px){
 /*todas las pantallas con un ancho inferior a 1024*/
+.hero{
+  height: auto;
+position: relative;
+overflow: hidden;
 
+}
+h1{
+  font-size: 2em;
+  position: relative;
+  z-index: 2;
+padding: 0 .5em;
+}
+.hero-img{
+  position: relative;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom:0;
+  top:0;
+
+
+}
 }
 @media screen and (max-width: 767px){
   .container-footer
@@ -446,10 +467,24 @@ height: auto;
   font-size: 1em;
   margin: .4em 0;
 }
-
-
-
-
+.hero{
+  height: auto;
+position: relative;
+}
+h1{
+  font-size: 2em;
+  position: relative;
+  z-index: 1;
+}
+.hero-img{
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  top:0;
+    width: 100%;
+}
 
 
 }
@@ -460,6 +495,21 @@ height: auto;
   }
   .contacto{
     padding-bottom: 7em;
-  
+
+  }
+  h1{
+    font-size: 2em;
+  }
+  .hero{
+    
+  }
+}
+@media screen and (max-width :320px){
+  h1{
+    font-size:1.2em;
+    background: rgba(0,0,0,.5);
+  }
+  .hero{
+    padding: 1em 1em;
   }
 }

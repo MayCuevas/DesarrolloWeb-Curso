@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body>
+    <i class="icon-menu burger-button"></i>
 <div class="container">
     <header class="header">
         <div class="container">
@@ -16,7 +17,7 @@
         <figure class="logo">
           <img src ="images/logo.png" id="logotipo"  alt="Logo de http:Leonidasesteban.com" height="50px"/>
         </figure>
-        <nav class="menu">
+        <nav class="menu ">
         <ol>
           <li>
             <a class="link" href="#portafolio">Portafolio</a>
@@ -30,6 +31,7 @@
         </ol>
       </nav>
 </div>
+
     </header>
 
    <section class="hero" >
@@ -38,7 +40,7 @@
       <h1 class="hero-title">
         Hola! Soy <strong>Leonidas Esteban</strong> <br /> Desarrollador <strong>Javascript</strong> con <br /> pasion por la <strong>enseñanza</strong>
       </h1>
-      <img class="hero-img" src="images/hero.jpg" width="500" height="300"></img> 
+      <img class="hero-img" src="images/hero.jpg" width="500" height="300"></img>
 
   </div>
     </section>
@@ -81,14 +83,18 @@
 
         </div>
     </section>
+
 <div class="container">
 
       <h2 class="texto"> Mas sobre mi Experiencia</h2>
+
       <section id= "experiencia" class="experiencia">
         <article class="exp">
           <figure class="exp-imageContainer">
 
-            <img class="image"src="images/platzi-conf.jpg" widht="300" height="300"/>
+            <div class="flexible-video">
+            <iframe class= "youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </figure>
             <div class="exp-details">
           <h3 class="exp-title" > Platzi Conf Mexico 2018 </h3>
@@ -99,8 +105,8 @@
 
         <article class="exp">
           <figure class="exp-imageContainer">
+            <video class="html-video" src="images/f8.mp4"> </video>
 
-            <img class="image"src="images/platzi-conf.jpg" widht="300" height="300"/>
           </figure>
             <div class="exp-details">
           <h3 class="exp-title" > Platzi Conf Mexico 2018 </h3>
@@ -144,10 +150,9 @@
        <button id="email-button">Enviar</button>
      </form>
      <div class="social">
-       <a href="https://twitter.com/leonidasesteban" class="social-link twitter"></a>
-       <a href="https://facebook.com/leonidasesteban" class="social-link facebook" ></a>
-       <a href="https://github.com/leonidasesteban" class="social-link github"></a>
-       <a href="https://instagram.com/leonidasesteban" class="social-link instagram"></a>
+       <a href="https://facebook.com/leonidasesteban" class="social-facebook" ></a>
+       <a href="https://github.com/leonidasesteban" class="social-github"></a>
+       <a href="https://instagram.com/leonidasesteban" class="social-instagram"></a>
      </div>
    </section>
      <footer>

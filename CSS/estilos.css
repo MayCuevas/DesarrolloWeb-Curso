@@ -211,23 +211,7 @@ h2{
   font-size: 2.5em;
   margin-bottom: 1em;
 }
-.menu{
-  position:fixed;
-  background: rgba(5,111,255,.9);
-  z-index:3;
-  top:0;
-  left: 0;
-  bottom:0;
-  width: 100vw;
-left: -100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-transition: .3s;
-}
-.menu.is-active{
-  left:0;
-}
+
 .portfolio
 {
   background-color: #fafafa;
@@ -473,9 +457,23 @@ align-content: center;
   top:10px;
   font-size:20px;
 }
+.menu{
+  position: inherit;
+z-index: 3;
+background: none;
+font-size: .5em;
+margin-right: 2em;
+}
 /* Media querys desktop first*/
 @media screen and (max-width: 1024px){
 /*todas las pantallas con un ancho inferior a 1024*/
+.menu{
+  position: inherit;
+z-index: 3;
+background: none;
+font-size: .5em;
+
+}
 .hero{
   height: auto;
 position: relative;
@@ -620,6 +618,24 @@ h1{
   justify-content: center;
 align-items: center;
 }
+.menu{
+  position:fixed;
+  background: rgba(5,111,255,.9);
+  z-index:3;
+  top:0;
+  left: 0;
+  bottom:0;
+  width: 100vw;
+left: -100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+transition: .3s;
+font-size: 1.5em;
+}
+.menu.is-active{
+  left:0;
+}
 
 }
 @media screen and (max-width: 480px){
@@ -637,6 +653,23 @@ align-items: center;
   .hero{
 
   }
+  .menu{
+    position:fixed;
+    background: rgba(5,111,255,.9);
+    z-index:3;
+    top:0;
+    left: 0;
+    bottom:0;
+    width: 100vw;
+  left: -100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  transition: .3s;
+  }
+  .menu.is-active{
+    left:0;
+  }
 }
 @media screen and (max-width :320px){
   h1{
@@ -649,5 +682,22 @@ align-items: center;
 .social{
   justify-content: center;
       padding-top: .5em;
+}
+.menu{
+  position:fixed;
+  background: rgba(5,111,255,.9);
+  z-index:3;
+  top:0;
+  left: 0;
+  bottom:0;
+  width: 100vw;
+left: -100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+transition: .3s;
+}
+.menu.is-active{
+  left:0;
 }
 }

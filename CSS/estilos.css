@@ -147,6 +147,7 @@ figure{
 
 body
 {
+  background: #1d252c;
   font-family: 'Source sans pro', sans-serif;
   margin :0px;
   b
@@ -156,11 +157,12 @@ font-family: 'Fjalla One', sans-serif;
 }
 h1
 {
-  font-size: 40px;
+  font-size: 45px;
 line-height:1.5em;
 letter-spacing: -.2px;
 color: #fff;
 margin:  0px 0px 0px 0px;
+    padding-left: 35px
 
 }
 h1 strong{
@@ -282,11 +284,13 @@ width: 47%;
       border-radius: 10px;
       flex-shrink: 0;
       background: #f4fbff;
+
 }
 .experiencia{
   display: flex;
-
+justify-content: center;
 flex-wrap: wrap;
+    background-color: #fafafa
 }
 .exp img{
   width: 480px;
@@ -403,13 +407,17 @@ align-content: center;
 
 }
 .container{
-  max-width:1000px;
+  max-width:1100px;
   flex: 1;
   display: inherit;
   align-items: inherit;
   justify-content: inherit;
   height: inherit;
   margin:0 auto;
+
+}
+.div-title{
+  width: -webkit-fill-available;
 }
 .container-footer{
   display: flex;
@@ -465,7 +473,7 @@ font-size: .5em;
 margin-right: 2em;
 }
 /* Media querys desktop first*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
 /*todas las pantallas con un ancho inferior a 1024*/
 .menu{
   position: inherit;
@@ -498,6 +506,10 @@ padding: 0 .5em;
 }
 }
 @media screen and (max-width: 767px){
+  h2{
+    font-size: 1.1em;
+    padding-left: 0;
+  }
 .burger-button{
   display:block;
 }
@@ -505,7 +517,7 @@ padding: 0 .5em;
   {
     display: block;
     text-align: center;
-    padding: 1em;
+
   }
 .contacto{
   width: auto;
@@ -520,7 +532,7 @@ padding: 0 .5em;
   padding: 1em;
 }
 .container{
-  padding: 1em;
+
 }
 .email{
   margin-left: 0px;
@@ -576,9 +588,7 @@ height: auto;
   margin-bottom: : .3em;
   padding-bottom: .1em;
 }
-.portfolio-title{
-  font-size: 1.3em;
-}
+
 .project-url{
   font-size: 1em;
   margin: .4em 0;
@@ -641,7 +651,7 @@ font-size: 1.5em;
 @media screen and (max-width: 480px){
   .project-details{
     width: auto;
-    font-size: 12px
+    font-size: 14px
   }
   .contacto{
     padding-bottom: 7em;
